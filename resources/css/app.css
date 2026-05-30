@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme inline {
+    --font-inter: 'Inter', sans-serif;
+}
+
+body, html {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    min-width: 0;
+    font-family: var(--font-inter);
+    background-color: var(--color-zinc-950);
+    overflow: hidden;
+}
+
+#app {
+    display: flex;
+    flex: 1;
+}
